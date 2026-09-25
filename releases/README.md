@@ -6,6 +6,7 @@ republish binaries.
 
 | Version | Notes |
 | --- | --- |
+| UI 0.2.3 | [ui-0.2.3.md](ui-0.2.3.md) |
 | CLI 0.2.3 | [cli-0.2.3.md](cli-0.2.3.md) |
 | CLI 0.2.2 | [cli-0.2.2.md](cli-0.2.2.md) |
 | CLI 0.2.1 | [cli-0.2.1.md](cli-0.2.1.md) |
