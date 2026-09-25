@@ -72,6 +72,29 @@ Keep key values out of shell history, issue reports and logs. The CLI redacts
 keys in its own dry-run and error output, but GlobalPlatformPro receives them
 as process arguments even when supplied through prompts or environment variables.
 
+## Select the security domain
+
+`applet status`, `applet install`, `applet uninstall` and `profile provision`
+select the card's Issuer Security Domain (ISD) by AID. The AID comes from
+`--isd-aid`, which defaults to `A000000151000000`, and is passed to
+GlobalPlatformPro as `--connect`. Selecting by AID lets the CLI reach cards whose
+ISD is not the default-selected application, such as a phone emulating a card
+through Android host card emulation.
+
+A card whose ISD has another AID, such as the older GlobalPlatform default
+`A000000003000000`, needs the option on every one of these commands:
+
+```shell
+./bin/card-factory applet status --reader 0 --isd-aid A000000003000000
+```
+
+The value must be 5–16 bytes of hexadecimal and is normalized to uppercase. An
+invalid value exits with the usage status before a reader or key is used. Dry
+runs show the `--connect` value. When GlobalPlatformPro cannot select the
+security domain, typically with status `6A82`, the error names the AID that was
+selected. The `GP_AID` environment variable no longer has any effect, because
+`--connect` takes precedence over it in GlobalPlatformPro.
+
 ## Prepare a card profile
 
 Render the built-in profile without changing a card:
@@ -149,8 +172,8 @@ or the complete registry.
 ```
 
 The command selects the Issuer Security Domain (default AID `A000000151000000`)
-and sends GlobalPlatform `GET DATA FF21` over PC/SC. `--isd-aid` accepts a 5–16
-byte hexadecimal AID. No keys, installed applets, CAPs or manifests are needed;
+and sends GlobalPlatform `GET DATA FF21` over PC/SC. `--isd-aid` is the same
+option described in [Select the security domain](#select-the-security-domain). No keys, installed applets, CAPs or manifests are needed;
 this command does not authenticate and has no `--gp` or `--gp-jar` options.
 
 The output reports application count, free non-volatile memory and free volatile
