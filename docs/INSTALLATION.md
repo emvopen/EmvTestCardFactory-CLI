@@ -6,13 +6,13 @@ Open the [CLI releases](https://github.com/howardman0209/EmvTestCardFactory-CLI/
 and select a published stable `cli-<version>` release. Read its release notes,
 then download the matching ZIP and its `.zip.sha256` file.
 
-The published `cli-0.2.2` release provides these archives:
+The published `cli-0.2.3` release provides these archives:
 
 | Computer | Archive name |
 | --- | --- |
-| Apple Silicon Mac | `card-factory-0.2.2-macos-aarch64.zip` |
-| Intel Mac | `card-factory-0.2.2-macos-x64.zip` |
-| Windows x64 | `card-factory-0.2.2-windows-x64.zip` |
+| Apple Silicon Mac | `card-factory-0.2.3-macos-aarch64.zip` |
+| Intel Mac | `card-factory-0.2.3-macos-x64.zip` |
+| Windows x64 | `card-factory-0.2.3-windows-x64.zip` |
 
 Windows ARM64 is not published. Each archive includes a native Java runtime;
 a Mac archive cannot be used as a Windows installation. For later versions,
@@ -62,15 +62,15 @@ On macOS, run this from the folder containing both downloaded files, adjusting
 the version and architecture to your download:
 
 ```shell
-shasum -a 256 -c card-factory-0.2.2-macos-aarch64.zip.sha256
+shasum -a 256 -c card-factory-0.2.3-macos-aarch64.zip.sha256
 ```
 
 The result should report `OK`. On Windows, compare the SHA-256 reported by
 PowerShell with the first value in the downloaded checksum file:
 
 ```powershell
-Get-FileHash .\card-factory-0.2.2-windows-x64.zip -Algorithm SHA256
-Get-Content .\card-factory-0.2.2-windows-x64.zip.sha256
+Get-FileHash .\card-factory-0.2.3-windows-x64.zip -Algorithm SHA256
+Get-Content .\card-factory-0.2.3-windows-x64.zip.sha256
 ```
 
 Compare the full hexadecimal hash; letter case does not matter. A checksum

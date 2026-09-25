@@ -111,7 +111,7 @@ Manual downloads are available on the
 [CAP release pages](https://github.com/howardman0209/EmvTestCardFactory-CLI/releases?q=caps-),
 but use `artifacts download` for the application's verified cache workflow.
 
-Host 0.2.2 uses schema 2 manifests with a minimum host version, an exclusive
+Host 0.2.3 uses schema 2 manifests with a minimum host version, an exclusive
 maximum host version, personalization protocol, applet contract and Java Card
 target. A new CAP may require upgrading the CLI first. Older hosts without
 update support need a manual host upgrade. The card's package version, CAP
