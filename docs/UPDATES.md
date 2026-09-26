@@ -8,6 +8,17 @@ prefixes rather than GitHub's single "Latest" badge to distinguish them.
 Examples use the macOS launcher from the extracted installation directory.
 On Windows, use `.\bin\card-factory.bat` instead of `./bin/card-factory`.
 
+## Repository transfer
+
+Releases now live in `emvopen/EmvTestCardFactory-CLI`. Previously shipped
+hosts may still be pinned to `howardman0209/EmvTestCardFactory-CLI` and reject
+the transferred repository's asset URLs with `Unexpected release asset URL`.
+Once a host built for the organization repository is published, download and
+verify it through the [installation guide](INSTALLATION.md), then reinstall.
+Reinstalling the same old archive, or changing only a package-manager download
+URL, does not change the embedded update source. Check the source reported by
+`card-factory doctor --scheme visa`; keep existing external CAP data.
+
 ## Update the CLI
 
 ```shell
@@ -108,7 +119,7 @@ The bundle contains one common PPSE CAP, six scheme payment CAPs and six
 install manifests. It is shared by macOS and Windows. The application verifies
 it with its trusted public key; users do not need the private signing key.
 Manual downloads are available on the
-[CAP release pages](https://github.com/howardman0209/EmvTestCardFactory-CLI/releases?q=caps-),
+[CAP release pages](https://github.com/emvopen/EmvTestCardFactory-CLI/releases?q=caps-),
 but use `artifacts download` for the application's verified cache workflow.
 
 Host 0.2.2 uses schema 2 manifests with a minimum host version, an exclusive

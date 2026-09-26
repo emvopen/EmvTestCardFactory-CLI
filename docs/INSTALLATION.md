@@ -2,7 +2,7 @@
 
 ## Choose the application archive
 
-Open the [CLI releases](https://github.com/howardman0209/EmvTestCardFactory-CLI/releases?q=cli-)
+Open the [CLI releases](https://github.com/emvopen/EmvTestCardFactory-CLI/releases?q=cli-)
 and select a published stable `cli-<version>` release. Read its release notes,
 then download the matching ZIP and its `.zip.sha256` file.
 
@@ -29,15 +29,15 @@ and the PC/SC reader driver first.
 For Apple Silicon macOS 11 Big Sur or newer:
 
 ```shell
-brew tap howardman0209/card-factory
+brew tap emvopen/card-factory
 brew install --cask card-factory
 ```
 
 For Windows x64 in PowerShell:
 
 ```powershell
-scoop bucket add howardman0209 https://github.com/howardman0209/scoop-card-factory
-scoop install howardman0209/card-factory
+scoop bucket add emvopen https://github.com/emvopen/scoop-card-factory
+scoop install emvopen/card-factory
 ```
 
 Both expose `card-factory` on your command path and include Java,

@@ -34,4 +34,4 @@ Downloading or selecting this bundle does not change a card. Preview installatio
 - The current source checkout has no changes to applet build/source or core runtime source relative to the signed source commit.
 - No physical-card operations were performed for this upload.
 
-See the [CAP update guide](https://github.com/howardman0209/EmvTestCardFactory-CLI/blob/main/docs/UPDATES.md#update-cap-artifacts).
+See the [CAP update guide](https://github.com/emvopen/EmvTestCardFactory-CLI/blob/main/docs/UPDATES.md#update-cap-artifacts).

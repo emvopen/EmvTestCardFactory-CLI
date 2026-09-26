@@ -12,8 +12,8 @@ precompiled CAP files; it does not compile applet source code.
 
 | What you need | Where to start |
 | --- | --- |
-| CLI application for your computer | [CLI releases](https://github.com/howardman0209/EmvTestCardFactory-CLI/releases?q=cli-) and the [installation guide](docs/INSTALLATION.md) |
-| Updated Java Card applets | [CAP releases](https://github.com/howardman0209/EmvTestCardFactory-CLI/releases?q=caps-) and the [CAP update guide](docs/UPDATES.md#update-cap-artifacts) |
+| CLI application for your computer | [CLI releases](https://github.com/emvopen/EmvTestCardFactory-CLI/releases?q=cli-) and the [installation guide](docs/INSTALLATION.md) |
+| Updated Java Card applets | [CAP releases](https://github.com/emvopen/EmvTestCardFactory-CLI/releases?q=caps-) and the [CAP update guide](docs/UPDATES.md#update-cap-artifacts) |
 
 CLI releases use tags such as `cli-0.2.0`. A single CLI release can contain
 separate macOS and Windows archives. CAP releases use independent tags such

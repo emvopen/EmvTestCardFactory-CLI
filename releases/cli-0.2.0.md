@@ -37,7 +37,7 @@
 
 ## Usage
 
-See the [installation guide](https://github.com/howardman0209/EmvTestCardFactory-CLI/blob/main/docs/INSTALLATION.md) and [CLI/CAP update guide](https://github.com/howardman0209/EmvTestCardFactory-CLI/blob/main/docs/UPDATES.md).
+See the [installation guide](https://github.com/emvopen/EmvTestCardFactory-CLI/blob/main/docs/INSTALLATION.md) and [CLI/CAP update guide](https://github.com/emvopen/EmvTestCardFactory-CLI/blob/main/docs/UPDATES.md).
 
 
 ## Platform archive verification
