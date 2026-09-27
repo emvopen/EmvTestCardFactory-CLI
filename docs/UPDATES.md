@@ -13,8 +13,9 @@ On Windows, use `.\bin\card-factory.bat` instead of `./bin/card-factory`.
 Releases now live in `emvopen/EmvTestCardFactory-CLI`. Previously shipped
 hosts may still be pinned to `howardman0209/EmvTestCardFactory-CLI` and reject
 the transferred repository's asset URLs with `Unexpected release asset URL`.
-Once a host built for the organization repository is published, download and
-verify it through the [installation guide](INSTALLATION.md), then reinstall.
+Pre-transfer hosts are retired. Download CLI 0.2.3 or later, built for the
+organization repository, and verify it through the [installation guide](INSTALLATION.md),
+then reinstall.
 Reinstalling the same old archive, or changing only a package-manager download
 URL, does not change the embedded update source. Check the source reported by
 `card-factory doctor --scheme visa`; keep existing external CAP data.
@@ -122,7 +123,7 @@ Manual downloads are available on the
 [CAP release pages](https://github.com/emvopen/EmvTestCardFactory-CLI/releases?q=caps-),
 but use `artifacts download` for the application's verified cache workflow.
 
-Host 0.2.2 uses schema 2 manifests with a minimum host version, an exclusive
+Host 0.2.3 uses schema 2 manifests with a minimum host version, an exclusive
 maximum host version, personalization protocol, applet contract and Java Card
 target. A new CAP may require upgrading the CLI first. Older hosts without
 update support need a manual host upgrade. The card's package version, CAP
