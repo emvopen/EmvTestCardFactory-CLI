@@ -23,8 +23,8 @@ launch the application from inside the ZIP viewer; extract the entire archive.
 
 ## Install with Homebrew or Scoop
 
-Package-manager metadata is promoted separately after publication. Check the tap or bucket version before installing; use the published ZIP if it has not reached CLI `0.2.3`. Install the package manager
-and the PC/SC reader driver first.
+The Homebrew and Scoop package definitions select CLI `0.2.3`. Install the
+package manager and the PC/SC reader driver first.
 
 For Apple Silicon macOS 11 Big Sur or newer:
 
